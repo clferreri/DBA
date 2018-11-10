@@ -25,8 +25,10 @@ Partial Class frmLista
         Me.lbPersonalizada = New System.Windows.Forms.ListBox()
         Me.txtNuevoDato = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnAgregarElementoLista = New Bunifu.Framework.UI.BunifuImageButton()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lblCargada = New System.Windows.Forms.Label()
+        Me.btnCargarLista = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
@@ -35,18 +37,16 @@ Partial Class frmLista
         Me.btnCancelar = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btnEliminarElemento = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btnGuardarLista = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.btnCargarLista = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.btnAgregarElementoLista = New Bunifu.Framework.UI.BunifuImageButton()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.btnAgregarElementoLista, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.btnCargarLista, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAyuda, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnCancelar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEliminarElemento, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnGuardarLista, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnCargarLista, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnAgregarElementoLista, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbPersonalizada
@@ -77,6 +77,20 @@ Partial Class frmLista
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Nuevo dato"
         '
+        'btnAgregarElementoLista
+        '
+        Me.btnAgregarElementoLista.BackColor = System.Drawing.Color.Transparent
+        Me.btnAgregarElementoLista.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAgregarElementoLista.Image = Global.Data_base_assistent.My.Resources.Resources.mas
+        Me.btnAgregarElementoLista.ImageActive = Nothing
+        Me.btnAgregarElementoLista.Location = New System.Drawing.Point(102, 53)
+        Me.btnAgregarElementoLista.Name = "btnAgregarElementoLista"
+        Me.btnAgregarElementoLista.Size = New System.Drawing.Size(30, 30)
+        Me.btnAgregarElementoLista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnAgregarElementoLista.TabIndex = 9
+        Me.btnAgregarElementoLista.TabStop = False
+        Me.btnAgregarElementoLista.Zoom = 10
+        '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
@@ -100,6 +114,20 @@ Partial Class frmLista
         Me.lblCargada.TabIndex = 1
         Me.lblCargada.Text = "Lista cargada"
         Me.lblCargada.Visible = False
+        '
+        'btnCargarLista
+        '
+        Me.btnCargarLista.BackColor = System.Drawing.Color.Transparent
+        Me.btnCargarLista.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCargarLista.Image = Global.Data_base_assistent.My.Resources.Resources.carpeta
+        Me.btnCargarLista.ImageActive = Nothing
+        Me.btnCargarLista.Location = New System.Drawing.Point(102, 29)
+        Me.btnCargarLista.Name = "btnCargarLista"
+        Me.btnCargarLista.Size = New System.Drawing.Size(30, 30)
+        Me.btnCargarLista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnCargarLista.TabIndex = 0
+        Me.btnCargarLista.TabStop = False
+        Me.btnCargarLista.Zoom = 10
         '
         'Label1
         '
@@ -166,7 +194,7 @@ Partial Class frmLista
         Me.btnCancelar.AccessibleDescription = "Guardar"
         Me.btnCancelar.BackColor = System.Drawing.Color.Transparent
         Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCancelar.Image = Global.Data_base_assistent.My.Resources.Resources.txt
+        Me.btnCancelar.Image = Global.Data_base_assistent.My.Resources.Resources.reanudar
         Me.btnCancelar.ImageActive = Nothing
         Me.btnCancelar.Location = New System.Drawing.Point(39, 272)
         Me.btnCancelar.Name = "btnCancelar"
@@ -205,34 +233,6 @@ Partial Class frmLista
         Me.btnGuardarLista.TabStop = False
         Me.btnGuardarLista.Zoom = 10
         '
-        'btnCargarLista
-        '
-        Me.btnCargarLista.BackColor = System.Drawing.Color.Transparent
-        Me.btnCargarLista.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCargarLista.Image = Global.Data_base_assistent.My.Resources.Resources.carpeta
-        Me.btnCargarLista.ImageActive = Nothing
-        Me.btnCargarLista.Location = New System.Drawing.Point(102, 29)
-        Me.btnCargarLista.Name = "btnCargarLista"
-        Me.btnCargarLista.Size = New System.Drawing.Size(30, 30)
-        Me.btnCargarLista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnCargarLista.TabIndex = 0
-        Me.btnCargarLista.TabStop = False
-        Me.btnCargarLista.Zoom = 10
-        '
-        'btnAgregarElementoLista
-        '
-        Me.btnAgregarElementoLista.BackColor = System.Drawing.Color.Transparent
-        Me.btnAgregarElementoLista.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAgregarElementoLista.Image = Global.Data_base_assistent.My.Resources.Resources.mas
-        Me.btnAgregarElementoLista.ImageActive = Nothing
-        Me.btnAgregarElementoLista.Location = New System.Drawing.Point(102, 53)
-        Me.btnAgregarElementoLista.Name = "btnAgregarElementoLista"
-        Me.btnAgregarElementoLista.Size = New System.Drawing.Size(30, 30)
-        Me.btnAgregarElementoLista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnAgregarElementoLista.TabIndex = 9
-        Me.btnAgregarElementoLista.TabStop = False
-        Me.btnAgregarElementoLista.Zoom = 10
-        '
         'frmLista
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -258,16 +258,16 @@ Partial Class frmLista
         Me.Text = " "
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.btnAgregarElementoLista, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.btnCargarLista, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAyuda, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnCancelar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnEliminarElemento, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnGuardarLista, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnCargarLista, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnAgregarElementoLista, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
