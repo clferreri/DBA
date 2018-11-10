@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78908F8F-5BDF-4310-864A-4FE19869C80C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Data_base_assistent.My.MyApplication</StartupObject>
+    <RootNamespace>Data_base_assistent</RootNamespace>
+    <AssemblyName>Data base assistent</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Data base assistent.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Data base assistent.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Generar Inserts\frmAmpliacionLista.Designer.vb">
+      <DependentUpon>frmAmpliacionLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generar Inserts\frmAmpliacionLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generar Inserts\frmLista.Designer.vb">
+      <DependentUpon>frmLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generar Inserts\frmLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Configuracion.Designer.vb">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Configuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\frmMenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\frmMenuPrincipal.Designer.vb">
+      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generar Inserts\frmScriptEntidad.Designer.vb">
+      <DependentUpon>frmScriptEntidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generar Inserts\frmScriptEntidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Generar Inserts\frmAmpliacionLista.resx">
+      <DependentUpon>frmAmpliacionLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generar Inserts\frmLista.resx">
+      <DependentUpon>frmLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generar Inserts\frmScriptEntidad.resx">
+      <DependentUpon>frmScriptEntidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logica\Logica.vbproj">
+      <Project>{e819da5b-eae3-4e87-a5b9-4f17306f9daf}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disco-flexible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accesorio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adelante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajustes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aturdida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aversion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basededatos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basededatos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basededatos2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculadora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpeta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\como.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contenedordereciclaje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DBA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dba2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diploma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enfermo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enojado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esceptico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espalda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feliz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goma-de-borrar%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muerto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navegador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reanudar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\riendo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\srv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goma-de-borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiplicar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Generar Tablas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportarBug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgregarArchivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExportarArchivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuscarArchivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editarArchivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuscarArchiv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpeta2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
