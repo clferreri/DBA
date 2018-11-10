@@ -194,7 +194,7 @@ Partial Class frmLista
         Me.btnCancelar.AccessibleDescription = "Guardar"
         Me.btnCancelar.BackColor = System.Drawing.Color.Transparent
         Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCancelar.Image = Global.Data_base_assistent.My.Resources.Resources.linkedin
+        Me.btnCancelar.Image = Global.Data_base_assistent.My.Resources.Resources.cerrar
         Me.btnCancelar.ImageActive = Nothing
         Me.btnCancelar.Location = New System.Drawing.Point(39, 272)
         Me.btnCancelar.Name = "btnCancelar"
